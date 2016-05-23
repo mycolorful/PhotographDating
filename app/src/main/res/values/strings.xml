@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">photographdating</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="main_fras_title">
+        <item>消息</item>
+        <item>联系人</item>
+        <item>发现</item>
+    </string-array>
+
+</resources>
