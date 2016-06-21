@@ -12,7 +12,7 @@ public class Account implements Parcelable {
 	private int sex;// 性别 0:未设置 1:女 2:男 3:其他
 	private String sign;// 用户个性签名
 	private String area;// 用户所在区域
-	private String token;// 用户与服务器交互的唯一标
+	private String token;// 用户与服务器交互的唯一标识
 	private boolean current;// 是否是当前用户
 
 	public Account() {

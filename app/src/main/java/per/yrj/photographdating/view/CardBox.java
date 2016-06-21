@@ -9,11 +9,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import per.yrj.photographdating.MainActivity;
-import per.yrj.photographdating.R;
+import per.yrj.photographdating.activities.MainActivity;
 import per.yrj.photographdating.utils.UnitConvert;
 
 /**
@@ -58,12 +56,8 @@ public class CardBox extends RelativeLayout {
     private int mCardTopPosition;
 
     class MyCallBack extends ViewDragHelper.Callback {
-        private ImageView ivPass;
-        private ImageView ivDate;
 
         public MyCallBack() {
-            ivPass = (ImageView) mMatchCard.findViewById(R.id.iv_pass);
-            ivDate = (ImageView) mMatchCard.findViewById(R.id.iv_makedate);
             mMatchCard.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
                 public void onGlobalLayout() {
@@ -98,15 +92,15 @@ public class CardBox extends RelativeLayout {
                 if (alpha > 1f) {
                     alpha = 1f;
                 }
-                ivDate.setAlpha(0f);
-                ivPass.setAlpha(alpha);
+                mMatchCard.setDateImgAlpha(0f);
+                mMatchCard.setPassImgAlpha(alpha);
             } else {
                 float alpha = dDip / 100;
                 if (alpha > 1f) {
                     alpha = 1f;
                 }
-                ivPass.setAlpha(0f);
-                ivDate.setAlpha(alpha);
+                mMatchCard.setPassImgAlpha(0f);
+                mMatchCard.setDateImgAlpha(alpha);
             }
         }
 

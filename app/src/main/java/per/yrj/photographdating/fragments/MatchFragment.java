@@ -17,7 +17,7 @@ import per.yrj.photographdating.R;
 /**
  * Created by YiRenjie on 2016/5/21.
  */
-public class MatchFragment extends Fragment {
+public class MatchFragment extends BaseFragment {
     private AppCompatActivity mContext;
 
     @Nullable

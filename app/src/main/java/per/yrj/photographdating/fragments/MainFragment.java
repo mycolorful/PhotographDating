@@ -26,7 +26,7 @@ import per.yrj.photographdating.R;
 /**
  * Created by YiRenjie on 2016/5/22.
  */
-public class MainFragment extends Fragment {
+public class MainFragment extends BaseFragment {
     private AppCompatActivity mContext;
     private List<Fragment> mFragments;
     private FloatingActionButton fab;
@@ -46,6 +46,8 @@ public class MainFragment extends Fragment {
         mFragments.add(new PeopleFragment());
         mFragments.add(new DiscoveryFragment());
         ViewPager viewPager = (ViewPager) v.findViewById(R.id.viewpager_main);
+        // 设置不可见页面缓存数量为2
+        viewPager.setOffscreenPageLimit(2);
         MyViewPagerAdapter adapter = new MyViewPagerAdapter(mContext.getSupportFragmentManager());
         viewPager.setAdapter(adapter);
         TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab_main);

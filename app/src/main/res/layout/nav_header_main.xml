@@ -13,7 +13,7 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView"
+        android:id="@+id/circle_user_icon"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/user_icon"
@@ -26,10 +26,11 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tv_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="8dp"
-            android:text="易仁杰"
+            android:text="未设置"
             android:textSize="18sp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -42,9 +43,9 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_signature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="书山有路勤为径，学海无涯苦作舟" />
+        android:text="该用户很懒，什么也没设置" />
 
 </LinearLayout>

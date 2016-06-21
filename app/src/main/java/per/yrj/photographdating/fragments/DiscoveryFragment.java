@@ -13,7 +13,7 @@ import per.yrj.photographdating.R;
 /**
  * Created by YiRenjie on 2016/5/21.
  */
-public class DiscoveryFragment extends Fragment {
+public class DiscoveryFragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
